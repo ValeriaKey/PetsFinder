@@ -16,13 +16,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="MainPage_User.xaml.cs">
+      <DependentUpon>MainPage_User.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="LoginUI.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="TestPage.xaml">
+    <EmbeddedResource Update="MainPage_Admin.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="userTestPage.xaml">
+    <EmbeddedResource Update="MainPage_User.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

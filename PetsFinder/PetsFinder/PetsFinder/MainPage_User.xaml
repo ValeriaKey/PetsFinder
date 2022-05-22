@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PetsFinder"
+             x:Class="PetsFinder.MainPage_User">
+    <ContentPage.BindingContext>
+        <local:PetInfoViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Support"/>
+        <ToolbarItem Text="Add Pet"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding ItemList}"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None"
+                      IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="20,0,0,0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100" Margin="0,0,10,0"></Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label VerticalOptions="Center" Text="{Binding Name}" TextColor="Black" FontSize="Large"></Label>
+                                        <Label VerticalOptions="Center" Text="{Binding City}" TextColor="Black"></Label>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                                        <Image Source="arrow.png"
+                                                WidthRequest="30"
+                                                HeightRequest="30"
+                                                Margin="0,0,20,0">
+                                        </Image>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

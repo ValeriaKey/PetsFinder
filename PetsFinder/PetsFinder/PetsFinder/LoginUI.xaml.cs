@@ -21,7 +21,7 @@ namespace PetsFinder
         {
             if(txtLogin.Text == "admin" && txtPassword.Text == "123")
             {
-                Navigation.PushAsync(new TestPage());
+                Navigation.PushAsync(new MainPage_Admin());
             }
             else
             {
@@ -31,7 +31,7 @@ namespace PetsFinder
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new userTestPage());
+            Navigation.PushAsync(new MainPage_User());
         }
     }
 }
