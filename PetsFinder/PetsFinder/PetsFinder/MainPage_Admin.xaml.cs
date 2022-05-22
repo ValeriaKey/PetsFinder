@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace PetsFinder
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TestPage : ContentPage
+    public partial class MainPage_Admin : ContentPage
     {
-        public TestPage()
+        public MainPage_Admin()
         {
             InitializeComponent();
         }
