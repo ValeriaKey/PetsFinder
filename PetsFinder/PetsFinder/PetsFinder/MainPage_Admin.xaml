@@ -1,12 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PetsFinder"
              x:Class="PetsFinder.MainPage_Admin">
+    <ContentPage.BindingContext>
+        <local:PetInfoViewModel/>
+    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView ItemsSource="{Binding ItemList}"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None"
+                      IsPullToRefreshEnabled="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="20,0,0,0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100" Margin="0,0,10,0"></Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label VerticalOptions="Center" Text="{Binding Name}" TextColor="Black" FontSize="Large"></Label>
+                                        <Label VerticalOptions="Center" Text="{Binding City}" TextColor="Black"></Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                                        <Image Source="edit.png"
+                                                Margin="0,0,10,0"
+                                                WidthRequest="30"
+                                                HeightRequest="30">
+                                        </Image>
+                                        <Image Source="delete.png"
+                                                Margin="0,0,20,0"
+                                                WidthRequest="30"
+                                                HeightRequest="30">
+                                        </Image>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
