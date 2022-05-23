@@ -24,11 +24,11 @@ The threat of the project may be that the application will not be in demand for 
 
 ### Functionality:
 
-1. User has an opportunity to view and add information about missing pets
-2. User has an opportunity to contact administrator if there is any questions
-3. User has an opportunity to call pet owner if missing pet is found
-4. User has an opportunity to search for a specific pet in the list
-5. Administrator has an opportunity to delete rows and update information
+- User has an opportunity to view and add information about missing pets
+- User has an opportunity to contact administrator if there is any questions
+- User has an opportunity to call pet owner if missing pet is found
+- User has an opportunity to search for a specific pet in the list
+- Administrator has an opportunity to delete rows and update information
 
 ## Getting started
 1. Go to 'Code' -> Download ZIP or use git clone https://github.com/ValeriaKey/PetsFinder.git
