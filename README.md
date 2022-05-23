@@ -30,9 +30,6 @@ The threat of the project may be that the application will not be in demand for 
 - User has an opportunity to search for a specific pet in the list
 - Administrator has an opportunity to delete rows and update information about missing pets
 
-//Test comment 123213213123123123123123213w
-// New Row
-
 ## Getting started
 1. Go to 'Code' -> Download ZIP or use git clone https://github.com/ValeriaKey/PetsFinder.git
 2. Open PetsFinder.sln
