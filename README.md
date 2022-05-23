@@ -28,7 +28,7 @@ The threat of the project may be that the application will not be in demand for 
 2. User has an opportunity to contact administrator if there is any questions
 3. User has an opportunity to call pet owner if missing pet is found
 4. User has an opportunity to search for a specific pet in the list
-5. Administrator has an opportunity to delete rows and update information
+5. Administrator has an opportunity to delete rows and update information about missing pets
 
 ## Getting started
 1. Go to 'Code' -> Download ZIP or use git clone https://github.com/ValeriaKey/PetsFinder.git
