@@ -28,7 +28,7 @@ The threat of the project may be that the application will not be in demand for 
 - User has an opportunity to contact administrator if there is any questions
 - User has an opportunity to call pet owner if missing pet is found
 - User has an opportunity to search for a specific pet in the list
-- Administrator has an opportunity to delete rows and update information
+- Administrator has an opportunity to delete rows and update information about missing pets
 
 //Test comment
 
