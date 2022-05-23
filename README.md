@@ -21,7 +21,7 @@ The disadvantages of the project are its focus on a limited range of users. The 
 
 ### Threats of the project
 The threat of the project may be that the application will not be in demand for an indefinite period of time. Animals are not lost that often, so the app may not be active among users. Also, in today&#39;s world, animals are increasingly chipped and can be found without the help of other people.
-// TEST
+// Teee
 ### Functionality:
 
 - User has an opportunity to view and add information about missing pets
