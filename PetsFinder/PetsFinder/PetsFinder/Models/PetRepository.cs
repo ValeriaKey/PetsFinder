@@ -34,5 +34,10 @@ namespace PetsFinder.Models
         {
             return database.Get<Pet>(id);
         }
+
+        public int DeleteItem(int id)
+        {
+            return database.Delete<Pet>(id);
+        }
     }
 }

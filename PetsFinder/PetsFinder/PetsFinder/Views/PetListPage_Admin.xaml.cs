@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetsFinder.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,19 @@ namespace PetsFinder.Views
         public PetListPage_Admin()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            petsList.ItemsSource = App.Database.GetItems();
+            base.OnAppearing();
+        }
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Pet selectedPet = (Pet)e.SelectedItem;
+            PetDetailsPage_Admin petPageAdmin = new PetDetailsPage_Admin();
+            petPageAdmin.BindingContext = selectedPet;
+            await Navigation.PushAsync(petPageAdmin);
         }
     }
 }
