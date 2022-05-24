@@ -18,6 +18,19 @@ namespace PetsFinder.Views
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            petsList.ItemsSource = App.Database.GetItems();
+            base.OnAppearing();
+        }
+        private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Pet selectedPet = (Pet)e.SelectedItem;
+            PetDetailsPage petPage = new PetDetailsPage();
+            petPage.BindingContext = selectedPet;
+            await Navigation.PushAsync(petPage);
+        }
+
         private async void CreatePet(object sender, EventArgs e)
         {
             Pet pet = new Pet();

@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using System.Collections.Generic;
 
 namespace PetsFinder.Models
 {
@@ -22,6 +23,16 @@ namespace PetsFinder.Models
             {
                 return database.Insert(item);
             }
+        }
+
+        public IEnumerable<Pet> GetItems()
+        {
+            return database.Table<Pet>().ToList();
+        }
+
+        public Pet GetItem(int id)
+        {
+            return database.Get<Pet>(id);
         }
     }
 }
