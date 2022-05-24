@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetsFinder.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,13 @@ namespace PetsFinder.Views
         public PetDetailsPage_Admin()
         {
             InitializeComponent();
+        }
+
+        private void DeletePet(object sender, EventArgs e)
+        {
+            var pet = (Pet)BindingContext;
+            App.Database.DeleteItem(pet.Id);
+            this.Navigation.PopAsync();
         }
     }
 }
