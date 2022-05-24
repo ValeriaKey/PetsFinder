@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetsFinder.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,14 @@ namespace PetsFinder.Views
         public PetListPage()
         {
             InitializeComponent();
+        }
+
+        private async void CreatePet(object sender, EventArgs e)
+        {
+            Pet pet = new Pet();
+            PetAddPage petAddPage = new PetAddPage();
+            petAddPage.BindingContext = pet;
+            await Navigation.PushAsync(petAddPage);
         }
     }
 }
