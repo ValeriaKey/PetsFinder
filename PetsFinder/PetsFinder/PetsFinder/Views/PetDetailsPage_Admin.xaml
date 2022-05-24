@@ -11,6 +11,7 @@
             <Entry Text="{Binding Image}" Placeholder="Image"/>
 
             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,20,0,0">
+                <Button Text="Update" Clicked="SavePet"/>
                 <Button Text="Delete" Clicked="DeletePet"/>
             </StackLayout>
         </StackLayout>

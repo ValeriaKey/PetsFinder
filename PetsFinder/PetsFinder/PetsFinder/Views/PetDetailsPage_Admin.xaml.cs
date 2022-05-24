@@ -24,5 +24,15 @@ namespace PetsFinder.Views
             App.Database.DeleteItem(pet.Id);
             this.Navigation.PopAsync();
         }
+
+        private void SavePet(object sender, EventArgs e)
+        {
+            var pet = (Pet)BindingContext;
+            if (!String.IsNullOrEmpty(pet.Name))
+            {
+                App.Database.SaveItem(pet);
+            }
+            this.Navigation.PopAsync();
+        }
     }
 }
