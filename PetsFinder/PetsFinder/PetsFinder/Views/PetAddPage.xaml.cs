@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetsFinder.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,16 @@ namespace PetsFinder.Views
         public PetAddPage()
         {
             InitializeComponent();
+        }
+
+        private void SavePet(object sender, EventArgs e)
+        {
+            var pet = (Pet)BindingContext;
+            if (!String.IsNullOrEmpty(pet.Name))
+            {
+                App.Database.SaveItem(pet);
+            }
+            this.Navigation.PopAsync();
         }
     }
 }
