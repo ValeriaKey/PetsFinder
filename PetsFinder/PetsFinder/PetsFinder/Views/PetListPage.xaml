@@ -9,9 +9,34 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="petsList" 
+                      ItemsSource="{Binding}" 
+                      ItemSelected="OnItemSelected" 
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="20,20,0,0">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="80" Margin="0,0,10,0"/>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label VerticalOptions="Center" Text="{Binding Name}" TextColor="Black" FontSize="Large"></Label>
+                                        <Label VerticalOptions="Center" Text="{Binding City}" TextColor="Black"></Label>
+                                    </StackLayout>
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                                        <Image Source="arrow.png"
+                                               WidthRequest="30"
+                                               HeightRequest="30"
+                                               Margin="0,0,20,0">
+                                        </Image>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
