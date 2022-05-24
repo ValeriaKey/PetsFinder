@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace PetsFinder
+namespace PetsFinder.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage_Admin : ContentPage
+    public partial class PetListPage : ContentPage
     {
-        public MainPage_Admin()
+        public PetListPage()
         {
             InitializeComponent();
         }

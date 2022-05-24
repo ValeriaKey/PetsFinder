@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PetsFinder.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,7 @@ namespace PetsFinder
         {
             if(txtLogin.Text == "admin" && txtPassword.Text == "123")
             {
-                Navigation.PushAsync(new MainPage_Admin());
+                Navigation.PushAsync(new PetListPage_Admin());
             }
             else
             {
@@ -31,7 +32,7 @@ namespace PetsFinder
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MainPage_User());
+            Navigation.PushAsync(new PetListPage());
         }
     }
 }
