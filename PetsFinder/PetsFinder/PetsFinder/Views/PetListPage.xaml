@@ -4,6 +4,7 @@
              x:Class="PetsFinder.Views.PetListPage">
 
     <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Support" Clicked="Support_Clicked"/>
         <ToolbarItem Text="Add Pet" Clicked="CreatePet"/>
     </ContentPage.ToolbarItems>
 
