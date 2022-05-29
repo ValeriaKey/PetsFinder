@@ -1,4 +1,5 @@
 ﻿using PetsFinder.Models;
+using Plugin.Messaging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,15 @@ namespace PetsFinder.Views
             PetAddPage petAddPage = new PetAddPage();
             petAddPage.BindingContext = pet;
             await Navigation.PushAsync(petAddPage);
+        }
+
+        private void Support_Clicked(object sender, EventArgs e)
+        {
+            var mail = CrossMessaging.Current.EmailMessenger;
+            if (mail.CanSendEmail)
+            {
+                mail.SendEmail("petsfinder@info.ee", "", "");
+            }
         }
     }
 }
