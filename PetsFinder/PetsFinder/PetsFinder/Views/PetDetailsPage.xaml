@@ -4,9 +4,58 @@
              x:Class="PetsFinder.Views.PetDetailsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Pet Details Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="{Binding Image}" Aspect="AspectFill" HeightRequest="250"
+                   VerticalOptions="Start"/>
+            <Label Text="{Binding Name}" FontSize="30" TextColor="#3F4364" Padding="0 20"/>
+            <Grid HorizontalOptions="Center" Padding="0 20">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0"
+                Text="Sex:"
+                HorizontalOptions="FillAndExpand"
+                VerticalTextAlignment="Start"
+                LineBreakMode="WordWrap"
+                       FontSize="Medium"
+                       TextColor="Black"/>
+
+                <Label Grid.Column="1"
+                Text="{Binding Sex}"
+                HorizontalOptions="FillAndExpand"
+                VerticalTextAlignment="Center"
+                LineBreakMode="NoWrap"
+                       FontSize="Medium"
+                       TextColor="Black"
+                       FontAttributes="Bold"/>
+            </Grid>
+            <Grid HorizontalOptions="Center" Padding="0 20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0"
+                Text="Location:"
+                HorizontalOptions="FillAndExpand"
+                VerticalTextAlignment="Start"
+                LineBreakMode="WordWrap"
+                       FontSize="Medium"
+                       TextColor="Black"/>
+
+                <Label Grid.Column="1"
+                Text="{Binding City}"
+                HorizontalOptions="FillAndExpand"
+                VerticalTextAlignment="Center"
+                LineBreakMode="NoWrap"
+                       FontSize="Medium"
+                       TextColor="Black"
+                       FontAttributes="Bold"/>
+            </Grid>
+            <Label Text="Description" TextColor="Black" FontSize="Medium" Padding="0 20" TextDecorations="Underline"/>
+            <Label Text="{Binding Description}" FontSize="Medium" TextColor="Black " FontAttributes="Bold" Padding="0 20"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
