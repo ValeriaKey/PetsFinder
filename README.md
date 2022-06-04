@@ -27,7 +27,6 @@ The threat of the project may be that the application will not be in demand for 
 - User has an opportunity to view and add information about missing pets
 - User has an opportunity to contact administrator if there is any questions
 - User has an opportunity to call pet owner if missing pet is found
-- User has an opportunity to search for a specific pet in the list
 - Administrator has an opportunity to delete rows and update information about missing pets
 
 ## Getting started
@@ -37,7 +36,7 @@ The threat of the project may be that the application will not be in demand for 
 ## A sample view of the final application
 
 ### Logging as a guest
-![login_page](https://user-images.githubusercontent.com/76990876/168574885-c8f0fee2-ad64-49b0-8257-b1e91f8dab20.png)
+![login-page](https://user-images.githubusercontent.com/77538837/172022985-f426fc44-5aa0-4334-a550-6bfd784c7677.PNG)
 ![main_page](https://user-images.githubusercontent.com/76990876/168575079-856ac144-32d4-480c-b676-49d5a71d0498.png)
 ![details_page](https://user-images.githubusercontent.com/76990876/168575118-fcd300ac-bdd9-4f7c-a1f1-016c51558950.png)
 ![add_pet](https://user-images.githubusercontent.com/76990876/168575155-f658d16f-f6ab-4751-ac74-1fd0c4b80783.png)
