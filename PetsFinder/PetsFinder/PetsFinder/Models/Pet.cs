@@ -12,5 +12,6 @@ namespace PetsFinder.Models
         public string City { get; set; }
         public string Sex { get; set; }
         public string Image { get; set; }
+        public int Telephone { get; set; }
     }
 }

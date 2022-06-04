@@ -9,8 +9,8 @@
             <Label Text="{Binding Name}" FontSize="30" TextColor="#3F4364" />
             <Grid HorizontalOptions="Center">
                 <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100" />
-                <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0"
@@ -54,8 +54,10 @@
                        FontAttributes="Bold"/>
             </Grid>
             <Label Text="Description" TextColor="Black" FontSize="Medium" TextDecorations="Underline"/>
-            <Label Text="{Binding Description}" FontSize="Medium" TextColor="Black " FontAttributes="Bold" />
-            
+            <ScrollView>
+                <Label Text="{Binding Description}" FontSize="Medium" TextColor="Black " FontAttributes="Bold" />
+            </ScrollView>
+            <Button x:Name="callToOwner" Clicked="callToOwner_Clicked" Text="Call to owner" Margin=" 0 0" TextColor="White" BackgroundColor="#3F4364" CornerRadius="50" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
