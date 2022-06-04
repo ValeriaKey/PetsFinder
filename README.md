@@ -36,12 +36,19 @@ The threat of the project may be that the application will not be in demand for 
 ## A sample view of the final application
 
 ### Logging as a guest
-![login-page](https://user-images.githubusercontent.com/77538837/172022985-f426fc44-5aa0-4334-a550-6bfd784c7677.PNG)
-![main_page](https://user-images.githubusercontent.com/76990876/168575079-856ac144-32d4-480c-b676-49d5a71d0498.png)
-![details_page](https://user-images.githubusercontent.com/76990876/168575118-fcd300ac-bdd9-4f7c-a1f1-016c51558950.png)
-![add_pet](https://user-images.githubusercontent.com/76990876/168575155-f658d16f-f6ab-4751-ac74-1fd0c4b80783.png)
+#### Login Page:
+![login page](https://user-images.githubusercontent.com/77538837/172023499-8c68649c-3059-43fb-94b6-375c33b85dad.png)
+#### Main Page:
+![main page guest](https://user-images.githubusercontent.com/77538837/172023509-2b86d995-3fee-4449-9da7-1d7b5e5edf14.png)
+#### Specific Pet Page:
+![special pet page](https://user-images.githubusercontent.com/77538837/172023511-487738bf-0333-4640-a820-b14406d76687.png)
+#### Page for missing pet adding:
+![pet add page](https://user-images.githubusercontent.com/77538837/172023515-e74a1fe8-d9cd-4b47-95a9-2431ccd28d6d.png)
 
 ### Logging as an admin
-![main_page_admin](https://user-images.githubusercontent.com/76990876/168575194-2812e76e-9ca0-41df-b9ea-ba9036eb87a5.png)
-![details_page_admin](https://user-images.githubusercontent.com/76990876/168575219-9ad9d675-cfa9-4029-adf4-808b98f9ddd1.png)
-![update_page](https://user-images.githubusercontent.com/76990876/168575239-f1d77f9c-153f-4e34-a6f1-713d84b440aa.png)
+#### Login Page:
+![login page](https://user-images.githubusercontent.com/77538837/172023499-8c68649c-3059-43fb-94b6-375c33b85dad.png)
+#### Main Page:
+![main page admin](https://user-images.githubusercontent.com/77538837/172023522-4e11f3bb-4fb6-43b7-b1fd-7bce0b4feb0c.png)
+#### Page for missing pet updating/deleting:
+![admin update-delete page](https://user-images.githubusercontent.com/77538837/172023524-ed0aae2b-db45-41b4-a0f5-7d1dfd64fed1.png)
