@@ -22,7 +22,7 @@ namespace PetsFinder.Views
         {
             var phoneDialer = CrossMessaging.Current.PhoneDialer;
             if (phoneDialer.CanMakePhoneCall)
-                phoneDialer.MakePhoneCall(""); // number 
+                phoneDialer.MakePhoneCall(tel_num.Text);
         }
     }
 }

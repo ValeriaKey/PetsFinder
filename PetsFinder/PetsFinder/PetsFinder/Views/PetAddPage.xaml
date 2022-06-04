@@ -3,16 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetsFinder.Views.PetAddPage">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="20,20">
-            <Entry Text="{Binding Name}" Placeholder="Name"/>
-            <Entry Text="{Binding Description}" Placeholder="Description"/>
-            <Entry Text="{Binding City}" Placeholder="City"/>
-            <Entry Text="{Binding Sex}" Placeholder="Sex"/>
-            <Entry Text="{Binding Image}" Placeholder="Image"/>
-            <Entry Text="{Binding Telephone}" Placeholder="Ex:58009010"/>
-            <StackLayout HorizontalOptions="FillAndExpand" Margin="0,20,0,0">
-                <Button Text="Add" Clicked="SavePet"/>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" Margin="20,20,0,0">
+                <Image Source="paw.png"
+                   HeightRequest="50"
+                   WidthRequest="50">
+                </Image>
+                <Label Text="Pets Finder" Margin="10,10,0,0" FontSize="Large" TextColor="#3F4364" FontAttributes="Bold"></Label>
             </StackLayout>
+
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="20,20">
+                <Entry Text="{Binding Name}" Placeholder="Name"/>
+                <Entry Text="{Binding Description}" Placeholder="Description"/>
+                <Entry Text="{Binding City}" Placeholder="City"/>
+                <Entry Text="{Binding Sex}" Placeholder="Sex"/>
+                <Entry Text="{Binding Image}" Placeholder="Image"/>
+                <Entry Text="{Binding PhoneNumber}" Placeholder="Phone number(Ex:58009010)"/>
+
+                <StackLayout HorizontalOptions="FillAndExpand" Margin="0,20,0,0">
+                    <Button Text="Add" Clicked="SavePet" BackgroundColor="#28a745" TextColor="#fff" FontSize="Medium"/>
+                </StackLayout>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

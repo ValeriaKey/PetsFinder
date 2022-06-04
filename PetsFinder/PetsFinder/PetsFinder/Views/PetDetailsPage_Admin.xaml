@@ -3,17 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetsFinder.Views.PetDetailsPage_Admin">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="20,20">
-            <Entry Text="{Binding Name}" Placeholder="Name"/>
-            <Entry Text="{Binding Description}" Placeholder="Description"/>
-            <Entry Text="{Binding City}" Placeholder="City"/>
-            <Entry Text="{Binding Sex}" Placeholder="Sex"/>
-            <Entry Text="{Binding Image}" Placeholder="Image"/>
-
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Margin="0,20,0,0">
-                <Button Text="Update" Clicked="SavePet"/>
-                <Button Text="Delete" Clicked="DeletePet"/>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" Margin="20,20,0,0">
+                <Image Source="paw.png"
+                   HeightRequest="50"
+                   WidthRequest="50">
+                </Image>
+                <Label Text="Pets Finder" Margin="10,10,0,0" FontSize="Large" TextColor="#3F4364" FontAttributes="Bold"></Label>
             </StackLayout>
+
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="20,20">
+                <Entry Text="{Binding Name}" Placeholder="Name"/>
+                <Entry Text="{Binding Description}" Placeholder="Description"/>
+                <Entry Text="{Binding City}" Placeholder="City"/>
+                <Entry Text="{Binding Sex}" Placeholder="Sex"/>
+                <Entry Text="{Binding Image}" Placeholder="Image"/>
+                <Entry Text="{Binding PhoneNumber}" Placeholder="Phone number(Ex:58009010)"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,20,0,0">
+                    <Button Text="Update" Clicked="SavePet" BackgroundColor="#ffc107" TextColor="#fff" Margin="0,0,20,0"/>
+                    <Button Text="Delete" Clicked="DeletePet" BackgroundColor="#dc3545" TextColor="#fff"/>
+                </StackLayout>
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
