@@ -18,11 +18,12 @@ namespace PetsFinder.Views
             InitializeComponent();
         }
 
-        private void callToOwner_Clicked(object sender, EventArgs e)
+        private void smsToOwner_Clicked(object sender, EventArgs e)
         {
-            var phoneDialer = CrossMessaging.Current.PhoneDialer;
-            if (phoneDialer.CanMakePhoneCall)
-                phoneDialer.MakePhoneCall(tel_num.Text);
+
+            var sms = CrossMessaging.Current.SmsMessenger;
+            if (sms.CanSendSms)
+                sms.SendSms(tel_num.Text, "");
         }
     }
 }
