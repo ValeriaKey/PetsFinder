@@ -23,7 +23,7 @@ namespace PetsFinder.Views
 
             var sms = CrossMessaging.Current.SmsMessenger;
             if (sms.CanSendSms)
-                sms.SendSms(tel_num.Text, "I found your pet! ");
+                sms.SendSms(tel_num.Text, "");
         }
     }
 }
