@@ -58,7 +58,7 @@
                 <Label Text="{Binding Description}" FontSize="Medium" TextColor="Black " FontAttributes="Bold" />
             </ScrollView>
             <Entry x:Name="tel_num" Text="{Binding PhoneNumber}" IsVisible="false"/>
-            <Button x:Name="callToOwner" Clicked="smsToOwner_Clicked"  Text="Write an SMS to owner" TextColor="White" BackgroundColor="#3F4364" CornerRadius="50" VerticalOptions="EndAndExpand"/>
+            <Button x:Name="callToOwner" Clicked="writeAnSmsToOwner_Clicked"  Text="Write an SMS to owner" TextColor="White" BackgroundColor="#3F4364" CornerRadius="50" VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -18,7 +18,7 @@ namespace PetsFinder.Views
             InitializeComponent();
         }
 
-        private void smsToOwner_Clicked(object sender, EventArgs e)
+        private void writeAnSmsToOwner_Clicked(object sender, EventArgs e)
         {
 
             var sms = CrossMessaging.Current.SmsMessenger;
